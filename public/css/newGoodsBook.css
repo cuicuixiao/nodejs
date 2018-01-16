@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: sandybrown;
+    /*background: none;*/
+    color: white;
+}
+.xx{
+    border: 1px solid blue;
+}
+.vlaue{
+    width: 800px;
+    height: 540px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+input[type=text]{
+    border: none;
+    margin: 0;
+    color: white;
+    width: 137px;
+    background-color: rgba(255,255,255,0);
+    box-shadow: none;
+    /*top: 30px;*/
+    height: 30px;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+.left{
+    margin-left: 80px;
+}
+
+.planBm1,.planBm2{
+    float: left;
+    /*border: 1px solid black;*/
+    width: 150px;
+    height: 30px;
+    position: relative;
+}
+.planBmN1,.planBmN2{
+    width: 137px;
+    height: 30px;
+    border: 1px solid rgb(255,255,255);
+    padding: 0 10px;
+    margin-left: 3px;
+}
+.planBmNc1,.planBmNc2{
+    margin-left: 105px;
+    cursor: pointer;
+    margin-top: -60px;
+}
+.planC11,.planC12{
+    width:150px;
+    /*height: 240px;*/
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    left: 10px;
+    top: 38px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.9);
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    visibility:hidden;
+}
+@keyframes bs {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.2)}
+    75%{transform: scale(0.8)}
+    100%{transform: scale(1)}
+}
+.planC11 div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.planC12 div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.title{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.top{
+    margin-top: 20px;
+    height: 30px;
+}
+.planf1{
+    float: left;
+}
+.xinbie{
+    /*margin-left: 60px;*/
+}
+.bianhao{
+    margin-left: 75px;
+}
+.top2{
+    margin-top: 20px;
+    line-height: 30px;
+}
+.text-wid .ff2{
+    width: 85%;
+    height: 60px;
+    line-height: 15px;
+    border-radius: 3px;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+}
+.text-wid{
+    margin-top: 60px;
+    height: 60px;
+}
+.text-wid>div{
+    width: 55px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+.but{
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #f36c3a;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.but:hover{
+    box-shadow: 0 0 5px #fff;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/clsList.css"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <span id="classb">班级管理</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-9"></div>
+        <div class="col-xs-3">
+            <div id="classtj">
+                <div id="classt">
+                    <span class="glyphicon glyphicon-plus-sign" id="classt1"></span>
+                </div>
+                <div id="classt2">
+                    <span><a href="newClassList.html">添加班级</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="classs">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <span class="classm">班级编号</span> <input type="text" placeholder=""/>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <span class="classm">班级名称</span> <input type="text" placeholder=""/>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <span class="classm">项目经理</span> <input type="text" placeholder=""/>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <span class="classm">班主任</span> <input type="text" placeholder=""/>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div id="classc">
+                <span>查询</span>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="classss">
+        <div class="col-xs-12">
+            <table>
+                <tr>
+                    <td>班级编号</td>
+                    <td>班级名称</td>
+                    <td>教室</td>
+                    <td>开班日期</td>
+                    <td>学生人数</td>
+                    <td>项目经理</td>
+                    <td>班主任</td>
+                    <td>当前阶段</td>
+                    <td>备注</td>
+                    <td>操作</td>
+                </tr>
+                <tr id="classsc">
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td> <span class="glyphicon glyphicon-edit planBtn1" id="classbj"></span> <span class="glyphicon glyphicon-trash planBtn2" id="classbj1"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td><span class="glyphicon glyphicon-edit planBtn1" id="classbj2"></span> <span class="glyphicon glyphicon-trash planBtn2" id="classbj3"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td> <span class="glyphicon glyphicon-edit planBtn1" id="classbj4"></span> <span class="glyphicon glyphicon-trash planBtn2" id="classbj5"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td> <span class="glyphicon glyphicon-edit planBtn1" id="classbj6"></span> <span class="glyphicon glyphicon-trash planBtn2" id="classbj7"></span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="myTs">
+    <div class="myWron">
+        <div class="myTishi">提示</div>
+        <div class="myWhat">确认修改信息？</div>
+        <div class="myOk">确定</div>
+        <div class="myNo">取消</div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/datas.js"></script>
+<script src="../js/clsList.js"></script>
+</body>
+</html>

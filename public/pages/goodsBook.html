@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/goodsBook.css">
+
+    <title></title>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<div class="row planTitle">商品书签管理</div>
+<div class="container" id="stuFirst">
+    <table id="stuXin">
+        <tr>
+            <th class="stuAll">书签编号
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">书签类型
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">注册时间
+                <input type="text" class="stuShu">
+            </th>
+
+        </tr>
+        <tr id="stuXia">
+            <th class="stuAll">书签类型
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuChatr">
+                <div id="stuYes">确定</div>
+            </th>
+            <th class="stuChatr">
+                <div id="stuChaxun">查询</div>
+            </th>
+            <th class="stuZuiyou">
+                <div class="stuXinzeng"><a href="newGoodsBook.html">新增书签</a></div>
+            </th>
+        </tr>
+    </table>
+</div>
+<div class="container" id="stuSecond">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>商品书签编号</th>
+            <th>书签类型</th>
+            <th>书签数据</th>
+            <th>注册时间</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="zoz">
+        <tr class="stuTrb">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><a href="addGoodsBook.html"><span class="glyphicon glyphicon-edit stuCge"> </span></a><span class="glyphicon glyphicon-trash stuDel">
+               </span></th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="myTs">
+    <div class="myWron">
+        <div class="myTishi">提示</div>
+        <div class="myWhat">确认修改信息？</div>
+        <div class="myOk">确定</div>
+        <div class="myNo">取消</div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/goodsBook.js"></script>
+</body>
+</html>

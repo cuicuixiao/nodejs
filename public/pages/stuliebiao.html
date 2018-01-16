@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/stuliebiao.css">
+
+    <title></title>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<div class="row planTitle">学生列表</div>
+<div class="container" id="stuFirst">
+    <table id="stuXin">
+        <tr>
+            <th class="stuAll">班级编号
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">学生姓名
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">联系电话
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuQQ">QQ
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuChatr"></th>
+            <th class="stuZuiyou">
+                <div class="stuXinzeng">EXCEL导入</div>
+            </th>
+        </tr>
+        <tr id="stuXia">
+            <th class="stuAll">毕业时间
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuAll">毕业学校
+                <input type="text" class="stuShu">
+            </th>
+            <th class="stuQQ"></th>
+            <th class="stuChatr">
+                <div id="stuChaxun">查询</div>
+            </th>
+            <th class="stuZuiyou">
+                <div class="stuXinzeng"><a href="newStu.html">新增学生</a></div>
+            </th>
+        </tr>
+    </table>
+</div>
+<div class="container" id="stuSecond">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>班级</th>
+            <th>学生姓名</th>
+            <th>联系电话</th>
+            <th>QQ</th>
+            <th>毕业时间</th>
+            <th>学历</th>
+            <th>毕业学校</th>
+            <th>紧急联系人</th>
+            <th>紧急联系人电话</th>
+            <th>备注</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody class="zoz">
+        <tr class="stuTrb">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span></th>
+        </tr>
+        <tr class="stuTrh">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span></th>
+        </tr>
+        <tr class="stuTrb">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span></th>
+        </tr>
+        <tr class="stuTrh">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span></th>
+        </tr>
+        <tr class="stuTrb">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span> </th>
+        </tr>
+        <tr class="stuTrh">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span> </th>
+        </tr>
+        <tr class="stuTrb">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><span class="glyphicon glyphicon-edit stuCge"></span><span class="glyphicon glyphicon-trash stuDel"></span> </th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="myTs">
+    <div class="myWron">
+        <div class="myTishi">提示</div>
+        <div class="myWhat">确认修改信息？</div>
+        <div class="myOk">确定</div>
+        <div class="myNo">取消</div>
+    </div>
+</div>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/xuesheng.js"></script>
+</body>
+</html>

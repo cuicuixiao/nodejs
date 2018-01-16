@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*#chaojida{*/
+/*background-image: url("images/beijing2.jpg");*/
+/*}*/
+ul{
+    list-style: none;
+}
+#schedule-box{
+    /*width:675px;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    font-size: 13px;
+    width: 500px;
+}
+.schedule-hd{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color:rgba(0,0,0,0.5) ;
+}
+
+.today{
+    flex: 1;
+    text-align: center;
+    color: white;
+
+}
+.week-ul{
+    background-color:rgba(0,0,0,0.5) ;
+    color: white;
+    margin-top: 1px;
+}
+.ul-box{
+    overflow: hidden;
+}
+.ul-box > li{
+    float: left;
+    width: 14.28%;
+
+    text-align: center;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.ul-box > li:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.other-month{
+    color: #999999;
+}
+.current-month{
+    color: white;
+}
+
+.arrow{
+    cursor: pointer;
+}
+.dayStyle{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    text-align: right;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+.current-month > .dayStyle:hover{
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+.today-flag{
+    /*background-color: rgba(0,0,0,0.5);*/
+    color: #fff;
+}
+.boxshaw{
+    background:rgba(255,00,255,0)
+}
+
+#h3Ele{
+    text-align: center;
+    padding: 10px;
+}
+#prevMonth{
+    color: white;
+}
+#nextMonth{
+    color: white;
+}
+body{
+    background: none;
+}
+.schedule-bd{
+    margin-top: -9px;
+}
+.row{
+    margin: 0;
+}
+@media screen and (max-width: 880px) {
+    #cadXxtz{
+        display: none;
+    }
+    #schedule-box {
+        margin-left: 18%;
+    }
+}
+.zzz tr:first-child{
+    background-color:rgba(0,0,0,0.6) ;
+}
+.zzz td{
+    background-color: rgba(0,0,0,0.3);
+    height: 30px;
+    width: 72px;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    color: white;
+}
+.zmian td{
+    height: 70px;
+    cursor: pointer;
+}
+.zmian td:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+.zmian td p{
+    margin-top: -15px;
+    text-align: right;
+    padding: 0 10px ;
+}
+.planTitle {
+    margin-left: 3%;
+    color: white;
+    margin-top: 4%;
+}

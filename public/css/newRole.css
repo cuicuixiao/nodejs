@@ -1,0 +1,99 @@
+body{
+    background-color: sandybrown;
+    color: #fff;
+    /*background: none;*/
+}
+.addRole{
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.addRole p:nth-child(1){
+    font-size: 14px;
+}
+.content{
+    margin-left: 30px;
+}
+.roleName{
+    width: 120px;
+    height: 30px;
+    margin-left: 65px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    line-height: 40px;
+}
+.roleNm{
+    margin-top: 20px;
+    height: 30px;
+}
+.roleNm p{
+    float: left;
+}
+.roleDes{
+    height: 150px;
+}
+.roleDscptn{
+    float: left;
+}
+.remark,.roleDes{
+    float: left;
+}
+.roleDscptn,.remark{
+    /*display: inline-block;*/
+    width: 300px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+}
+button{
+    margin-left: 130px;
+    margin-top: 30px;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background-color: #f36d3a;
+    border:none;
+    border-radius: 3px;
+    clear: both;
+}
+button:hover{
+    box-shadow: 0 0 5px #fff;
+}
+button:hover{
+    box-shadow: 0 0 5px #fff;
+}
+.project{
+    float: left;
+    margin-top: 135px;
+    margin-left: 100px;
+}
+.project ul li:nth-of-type(1), .project ul li:nth-of-type(3), .project ul li:nth-of-type(5){
+    list-style: none;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.project ul li:nth-of-type(2), .project ul li:nth-of-type(4), .project ul li:nth-of-type(6){
+    list-style: none;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 880px) {
+    .project{
+        display: none;
+    }
+    .addRole {
+        margin-left: 25%;
+    }
+}
+.pp{
+    text-align: left;
+    margin-top: 30px;
+}

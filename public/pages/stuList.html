@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title></title>
+    <link rel="stylesheet" href="../css/stuList.css"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row stuTitle">基础管理 > 角色管理</div>
+    <div class="row stuZj">
+        <div class="col-sm-4 col-sm-offset-6 col-xs-5 col-xs-offset-6">
+            <div class="stuNew">
+                <div class="stuAdd"><span class="glyphicon glyphicon-plus-sign"></span></div>
+                <div class="stuPer"><a href="newRole.html">新增角色</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="row stuMes">
+        <table class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+            <tr>
+                <td>NO</td>
+                <td>角色名称</td>
+                <td>角色描述</td>
+                <td>备注</td>
+                <td>操作</td>
+            </tr>
+            <tbody id="roleList">
+
+            </tbody>
+        </table>
+        <div class="col-sm-2 col-xs-1"></div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../js/datas.js"></script>
+<script src="../js/stuList.js"></script>
+</body>
+</html>

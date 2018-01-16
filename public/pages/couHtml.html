@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cou.css">
+    <title>Title</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="cou_Pstyle">课程管理</p>
+        </div>
+    </div>
+    <div class="row cou_Box">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+            <div class="cou_app">
+                <div>
+                    <span class="glyphicon glyphicon-plus-sign cou_coi"></span>
+                </div>
+                <div><a href="newCoustyle.html">新增课程</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="row cou_Table">
+        <div class="col-lg-12">
+            <div class="table-responsive overflow" tabindex="5003" style="overflow: hidden; outline: none;">
+                <table class="table table-bordered " id="cou_table">
+                    <thead>
+                    <tr>
+                        <th>课程名称</th>
+                        <th>阶段数</th>
+                        <th>总天数</th>
+                        <th>修改日期</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody class="cou_table"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="cou_maxBox" class="col-lg-12 cou_maxBox">
+            <div>
+                <p class="cou_boxP">提 示</p>
+                <div id="cou_minBox" class="cou_minBox">
+                </div>
+                <div class="cou_sure" onclick="couWindow()">确认</div>
+                <div class="cou_close" onclick="couWindow()">取消</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/cou.js"></script>
+</body>
+</html>

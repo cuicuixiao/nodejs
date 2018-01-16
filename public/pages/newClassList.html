@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/newClassList.css">
+    <style>
+        /*body{*/
+            /*background-color: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <div class="container zhuye">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newClass_xinzen">
+                班级管理>新增班级
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newClass_title">
+                班级基本信息
+            </div>
+            <!--<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 xx"></div>-->
+        </div>
+       <div class="container">
+           <div class="row newClassmargin-top">
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">班&nbsp;&nbsp;级&nbsp;&nbsp;编&nbsp;&nbsp;号</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">班&nbsp;&nbsp;级&nbsp;&nbsp;名&nbsp;&nbsp;称</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">班&nbsp;&nbsp;级&nbsp;&nbsp;状&nbsp;&nbsp;态</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+           </div>
+           <div class="row newClass_margin1_top">
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">开&nbsp;&nbsp;班&nbsp;&nbsp;日&nbsp;&nbsp;期</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">Q&nbsp;&nbsp;&nbsp;Q&nbsp;&nbsp;&nbsp;群&nbsp;&nbsp;号</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+                   <div class="newClass_floatLefe newClass_padding-top">教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;室</div>
+                   <div contenteditable="true" class="newClass_input newClass_floatLefe"></div>
+               </div>
+           </div>
+           <div class="row newClass_margin-top">
+               <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 ">
+                   <div class="newClass-beihzu">备注</div>
+               </div>
+               <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 newClass_textarea">
+                   <textarea></textarea>
+               </div>
+           </div>
+       </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 newClass_title">
+                班级详细信息
+            </div>
+            <div class="container">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 row">
+                    <div class="newClass_floatLefe newClass_but newClass_but_hover newCLass click1" onclick="newClassclick(1)">学生情况</div>
+                    <div class="newClass_floatLefe newClass-left newClass_but newClass_but_hover click2" onclick="newClassclick(2)">班级记录</div>
+                    <div class="newClass_floatLefe newClass-left newClass_but newClass_but_hover newClassChaKan">查看排课</div>
+                    <div class="newClass_pos">
+                        <div class="newClass_kuang">
+                            <div class="newClass_zongRenShu">总人数：<span></span>人</div>
+                            <div class="newClass_nanSeng">
+                                <div>男生：<span></span>人</div>
+                                <div>本科：<span></span>人</div>
+                            </div>
+                            <div class="newClass_girl">
+                                <div>女生：<span></span>人</div>
+                                <div>专科：<span></span>人</div>
+                            </div>
+                            <div class="newClass_GaoZhong">高中及以下：<span></span>人</div>
+                        </div>
+                        <div class="newClass_banJiLu">
+                            <table>
+                                <tr class="newClass_oneTr black">
+                                    <td>学生情况</td>
+                                    <td>修改人</td>
+                                    <td>修改项</td>
+                                    <td>修改记录详情</td>
+                                </tr>
+                                <tr class="newClass_tr wirde">
+                                    <td>2015-10-5</td>
+                                    <td>王芳</td>
+                                    <td>班级状态</td>
+                                    <td>未开班至在读</td>
+                                </tr>
+                                <tr class="newClass_tr black">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="newClass_tr wirde">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="newClass_butBaoCun">保存</div>
+            </div>
+        </div>
+    </div>
+    <!--班级课程设置-->
+    <div class="container banjikecheng" style="display: none">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="newClass_benJiKeChen">
+                <div class="newCLassTitle">班级课程设置</div>
+                <div class="newClass-border">
+                    <table class="ff">
+                        <tr class="border-bottom">
+                            <td>web前端</td>
+                            <td colspan="2" class="newCLassleft">开始日期  2016年1月1日</td>
+                            <td class="newClass_right "><span class="glyphicon glyphicon-trash cusuer jiedidan"></span></td>
+                        </tr>
+                        <tr>
+                            <td>一阶段</td>
+                            <td>授课人</td>
+                            <td>邹捷</td>
+                            <td>每天</td>
+                        </tr>
+                        <tr>
+                            <td>二阶段</td>
+                            <td>授课人</td>
+                            <td>邹捷</td>
+                            <td>每天</td>
+                        </tr>
+                        <tr>
+                            <td>三阶段</td>
+                            <td>授课人</td>
+                            <td>邹捷</td>
+                            <td>每天</td>
+                        </tr>
+                        <tr>
+                            <td>四阶段</td>
+                            <td>授课人</td>
+                            <td>邹捷</td>
+                            <td>每天</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="newClass_button newClass_button1 xinzengkecheng">新增课程</div>
+                <div class="newClass_button newClass_button2 fanhui">返回</div>
+            </div>
+        </div>
+    </div>
+    <!--新增课程弹框-->
+    <div class="container newCLassPos1">
+        <div class="newCLass_xinZenKeCheng">
+            <h3>添加课程</h3>
+            <div class="newPadding">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <!--选择课程下拉框-->
+                            <div class="planBm">
+                                <div class="planf">课程</div>
+                                <div class="planf planBmN">--请选择--</div>
+                                <span class="caret planBmNc"></span>
+                                <div class="planC1 planT1">
+                                    <div class="planClick1">web前端</div>
+                                    <div class="planClick2">UI预科</div>
+                                    <div class="planClick3">JAVA</div>
+                                    <div class="planClick4">职业素养</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td colspan="2" class="line-height">
+                            <span  class="newCLassdate">开始日期</span>
+                            <div class="newCLassdate1 newCLassdate" contenteditable="true"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>一阶段</td>
+                        <td>授课人</td>
+                        <td>
+                            <div class="planBm1 line-height">
+                                <div class="planf1 planBmN1">--请选择班主任--</div>
+                                <span class="caret planBmNc1"></span>
+                                <div class="planC11 planT11">
+                                    <div class="planClick11">邹杰</div>
+                                    <div class="planClick21">林伊娜</div>
+                                    <div class="planClick31">唐钰玮</div>
+                                    <div class="planClick41">王芳</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="planBm2 line-height">
+                                <div class="planf2 planBmN2">--重复周期--</div>
+                                <span class="caret planBmNc2"></span>
+                                <div class="planC12 planT12">
+                                    <div class="planClick12">每天</div>
+                                    <div class="planClick22">星期一</div>
+                                    <div class="planClick32">星期二</div>
+                                    <div class="planClick42">星期三</div>
+                                    <div class="planClick52">星期四</div>
+                                    <div class="planClick62">星期五</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>二阶段</td>
+                        <td>授课人</td>
+                        <td>
+                            <div class="planBm1 line-height">
+                                <div class="planf1 planBmN1">--请选择班主任--</div>
+                                <span class="caret planBmNc1"></span>
+                                <div class="planC11 planT11">
+                                    <div class="planClick11">邹杰</div>
+                                    <div class="planClick21">林伊娜</div>
+                                    <div class="planClick31">唐钰玮</div>
+                                    <div class="planClick41">王芳</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="planBm2 line-height">
+                                <div class="planf2 planBmN2">--重复周期--</div>
+                                <span class="caret planBmNc2"></span>
+                                <div class="planC12 planT12">
+                                    <div class="planClick12">每天</div>
+                                    <div class="planClick22">星期一</div>
+                                    <div class="planClick32">星期二</div>
+                                    <div class="planClick42">星期三</div>
+                                    <div class="planClick52">星期四</div>
+                                    <div class="planClick62">星期五</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>三阶段</td>
+                        <td>授课人</td>
+                        <td>
+                            <div class="planBm1 line-height">
+                                <div class="planf1 planBmN1">--请选择班主任--</div>
+                                <span class="caret planBmNc1"></span>
+                                <div class="planC11 planT11">
+                                    <div class="planClick11">邹杰</div>
+                                    <div class="planClick21">林伊娜</div>
+                                    <div class="planClick31">唐钰玮</div>
+                                    <div class="planClick41">王芳</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="planBm2 line-height">
+                                <div class="planf2 planBmN2">--重复周期--</div>
+                                <span class="caret planBmNc2"></span>
+                                <div class="planC12 planT12">
+                                    <div class="planClick12">每天</div>
+                                    <div class="planClick22">星期一</div>
+                                    <div class="planClick32">星期二</div>
+                                    <div class="planClick42">星期三</div>
+                                    <div class="planClick52">星期四</div>
+                                    <div class="planClick62">星期五</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>四阶段</td>
+                        <td>授课人</td>
+                        <td>
+                            <div class="planBm1 line-height">
+                                <div class="planf1 planBmN1">--请选择班主任--</div>
+                                <span class="caret planBmNc1"></span>
+                                <div class="planC11 planT11">
+                                    <div class="planClick11">邹杰</div>
+                                    <div class="planClick21">林伊娜</div>
+                                    <div class="planClick31">唐钰玮</div>
+                                    <div class="planClick41">王芳</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="planBm2 line-height">
+                                <div class="planf2 planBmN2">--重复周期--</div>
+                                <span class="caret planBmNc2"></span>
+                                <div class="planC12 planT12">
+                                    <div class="planClick12">每天</div>
+                                    <div class="planClick22">星期一</div>
+                                    <div class="planClick32">星期二</div>
+                                    <div class="planClick42">星期三</div>
+                                    <div class="planClick52">星期四</div>
+                                    <div class="planClick62">星期五</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="newQueRen">确认</div>
+            <div class="newQuXiao">取消</div>
+        </div>
+
+    </div>
+    <!--删除弹框-->
+    <div class="container newCLassPos">
+        <div class="newCLass_del">
+            <div class="newCLass-tiShi">提示</div>
+            <div class="newCLass-text">是否删除当前排课</div>
+            <div class="newCLass_qr_del">
+                <div class="newCLass_queren">确认</div>
+                <div class="newCLass_delete">取消</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/datas.js"></script>
+    <script src="../js/newClassList.js"></script>
+
+</body>
+</html>

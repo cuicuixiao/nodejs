@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: sandybrown;
+    color: white;
+    /*background: none;*/
+}
+.text-neirong{
+    width: 640px;
+    height: 445px;
+    margin: 0 auto;
+    margin-top: 8%;
+}
+.title{
+    font-size: 18px;
+    margin-top: 50px;
+}
+input[type=text]{
+    border: none;
+    outline: none;
+    margin: 0;
+    color: white;
+    background-color: rgba(255,255,255,0);
+    box-shadow: none;
+    top: 30px;
+    height: 30px;
+    width: 137px;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+}
+.marignleft{
+    margin-left: 100px;
+}
+.marigntop{
+    margin-top: 20px;
+}
+.planBm1,.planBm2{
+    float: left;
+    /*border: 1px solid black;*/
+    width: 150px;
+    height: 30px;
+    position: relative;
+}
+.planBmN1,.planBmN2{
+    width: 137px;
+    height: 30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 0 10px;
+    margin-left: 3px;
+}
+.planBmNc1,.planBmNc2{
+    margin-left: 120px;
+    cursor: pointer;
+    margin-top: -50px;
+}
+.planC11,.planC12{
+    width:150px;
+    /*height: 240px;*/
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    left: 10px;
+    top: 38px;
+    z-index: 10;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.9);
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    visibility:hidden;
+}
+@keyframes bs {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.2)}
+    75%{transform: scale(0.8)}
+    100%{transform: scale(1)}
+}
+.planC11 div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.planC12 div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.top{
+    margin-top: 20px;
+    height: 30px;
+}
+.planf1{
+    float: left;
+    line-height: 30px;
+}
+.xiugai{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f36c3a;
+    border-radius: 3px;
+    margin-left: 326px;
+}
+.xiugai1{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f36c3a;
+    border-radius: 3px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+.marignlef{
+    margin-left: 95px;
+}
+.top1{
+    margin-top: 25px;
+}
+.dd:hover{
+    cursor: pointer;
+}
+
+
+/**/
+.myTs{
+    width: 280px;
+    height: 210px;
+    background-color: rgba(0, 0, 0, 0.69);
+    margin: 0 auto;
+    margin-top: 200px;
+    overflow: hidden;
+    padding: 20px;
+}
+.myTishi{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.myWhat{
+    margin-top: 5px;
+}
+.myOk{
+    width: 63px;
+    height: 25px;
+    float: left;
+    background-color: rgba(255,255,255,0.3);
+    text-align: center;
+    line-height: 25px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.myNo{
+    width: 63px;
+    height: 25px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid white;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.bian:hover{
+    cursor: pointer;
+}
+.pos{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+.dd:hover{
+    box-shadow: 0 0 5px #fff;
+}

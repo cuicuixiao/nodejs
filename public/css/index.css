@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainBoss{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*切换背景*/
+.mainBg{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/skin3.jpg");
+    position: fixed;
+    z-index: -1;
+    background-size: 100% 100%;
+}
+.mainHide{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: -1;
+}
+/*换肤按钮*/
+.mainSkin{
+    width: 120px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    text-align: left;
+    line-height: 35px;
+    position: fixed;
+    z-index: 100;
+    right: -85px;
+    top: 200px;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+.mainSkin:hover{
+    right: 0;
+}
+.mainSkin span{
+    padding: 0 12px;
+}
+/*换肤弹窗*/
+.mainSkinCge{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 300px;
+    background-color: rgba(0,0,0,0.68);
+    padding: 10px 15px;
+    color: white;
+    overflow: hidden;
+    margin-top: -300px;
+    transition: all .3s ease-in-out;
+}
+/*换肤弹窗-关闭按钮*/
+.mainClose{
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+}
+.mainClose:hover{
+    color: rgba(255,255,255,1);
+}
+.mainSkinCge hr{
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+/*皮肤类型*/
+.skin{
+    width: 21%;
+    height: 38%;
+    border: 3px solid black;
+    float: left;
+    margin-left: 3%;
+    margin-top: 15px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.mainSkin1{
+    background-image: url("../images/skin1.jpg");
+}
+.mainSkin2{
+    background-image: url("../images/skin2.jpg");
+}
+.mainSkin3{
+    background-image: url("../images/skin3.jpg");
+}
+.mainSkin4{
+    background-image: url("../images/skin4.jpg");
+}
+.mainSkin5{
+    background-image: url("../images/skin5.jpg");
+}
+.mainSkin6{
+    background-image: url("../images/skin6.jpg");
+}
+.mainSkin7{
+    background-image: url("../images/skin7.jpg");
+}
+.mainSkin8{
+    background-image: url("../images/skin8.jpg");
+}
+/*bootstrap开始主体*/
+.mainMain{
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.mainMain div{
+    height: 49px;
+    font-size: 16px;
+    line-height:50px ;
+    margin: 0;
+    padding: 0;
+}
+/*菜单*/
+.mainMenu{
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("../images/menu.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+.mainMain .mainLogo{
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.23);
+    padding-left: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+/*信息。更新。搜索*/
+.mainInform span{
+    color: white;
+}
+.mainMes,.mainSer{
+    width: 50px;
+    background-image: url("../images/message.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    cursor: pointer;
+    float: left;
+}
+.mainMes span{
+    background: #F00000;
+    font-size: 10px;
+    text-align: center;
+    padding: 2px 3px ;
+    border-radius: 2px;
+    color: white;
+    margin-left: 30px;
+    top: -10px;
+    position: relative;
+}
+.mainXin{
+    width: 0;
+    float: left;
+    height: 49px;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+.mainUpd{
+    background-image: url("../images/updates.png");
+}
+.mainSer{
+    background-image: url("../images/search.png");
+}
+.mainMes:hover+.mainXin{
+    width:70px;
+}
+.mainSer:hover+.mainSerc{
+    width: 150px;
+}
+.mainMain .mainSerc:hover{
+    width: 150px;
+}
+.mainMain .mainSerc{
+    border-bottom: 1px solid white;
+    width: 0;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    color: white;
+    transition: all .2s linear;
+}
+/*时间部分*/
+.mainMain .mainClock{
+    float: right;
+    font-size: 20px;
+    padding-right: 20px;
+    color: white;
+}
+/*导航*/
+.mainNav{
+    /*width: 16.695%;*/
+    width: 228px;
+    height: 400px;
+    background-color: rgba(0,0,0,0.23);
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+.mainNav a{
+    color: white;
+    text-decoration: none;
+}
+.mainClass{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    background-image: url("../images/table.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.mainClass:hover{
+    background-color: rgba(0,0,0,0.7);
+    opacity: 1;
+}
+.mainClass:hover+.mainClassList{
+    visibility: visible;
+    opacity: 1;
+    left: 50px;
+}
+.mainClassList:hover{
+    visibility: visible;
+    opacity: 1;
+    left: 50px;
+}
+.mainClassList{
+    color: white;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 20px;
+    width: 78%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    left: 100px;
+    top:0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+.mainStu{
+    background-image: url("../images/pages.png");
+}
+.mainStuList{
+    top:50px;
+}
+.mainCur{
+    background-image: url("../images/chart.png");
+}
+.mainCurList{
+    top:100px;
+}
+.mainAp{
+    background-image: url("../images/ui.png");
+}
+.mainApList{
+    top:150px;
+}
+.mainBase{
+    background-image: url("../images/calendar.png");
+}
+.mainBaseList{
+    top:200px;
+    height: 200px;
+}
+/*日常信息展示栏*/
+.mainMy{
+    position: absolute;
+    top:0;
+    left: 50px;
+    width: 178px;
+    height: 400px;
+    text-align: center;
+    border-left: 1px solid rgba(0,0,0,0.35);
+}
+.mainImg{
+    width: 120px;
+    margin: 9px 0 4px;
+    border-radius: 100px;
+    border: 6px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.mainImg:hover{
+    animation: mainTx 1s ease-in-out;
+}
+/*图片动画*/
+@keyframes mainTx {
+    0%{transform: scale(0.9)}
+    10%{
+        transform: scale(1.1) rotate(10deg);
+    }
+    20%{
+        transform: scale(1.1) rotate(-10deg);
+    }
+    30%{
+        transform: scale(1.1) rotate(10deg);
+    }
+    40%{
+        transform: scale(1.1) rotate(-10deg);
+    }
+    50%{
+        transform: scale(1.1) rotate(10deg);
+    }
+    60%{
+        transform: scale(1.1) rotate(-10deg);
+    }
+    70%{
+        transform: scale(1.1) rotate(10deg);
+    }
+    80%{
+        transform: scale(1.1) rotate(-10deg);
+    }
+    90%{
+        transform: scale(1.1) rotate(-10deg);
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
+    }
+}
+.mainPt{
+    text-align: center;
+    color: white;
+}
+.mainDy{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    margin-top: 23.5px;
+}
+/*报名情况*/
+.mainWeb{
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+.mainWebAdd{
+    margin: 0 10px;
+    height: 4px;
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.mainWp1{
+    width: 70%;
+    background-color: #d9534f;
+    height: 100%;
+}
+.mainWp2{
+    width: 40%;
+    background-color: #5bc0de;
+    height: 100%;
+}
+.mainWp3{
+    width: 95%;
+    background-color: #5cb85c;
+    height: 100%;
+}
+.mainWp4{
+    width: 81%;
+    background-color: #f0ad4e;
+    height: 100%;
+}
+/*子页面展示块*/
+.mainPages iframe{
+    width: 75%;
+    margin-left:20%;
+    margin-top: 0.9%;
+    height: 638px;
+    transition: all .3s ease-in-out;
+}
+::-webkit-scrollbar{width:5px;height:6px;background:#ccc;}
+::-webkit-scrollbar-button{background-color:#e5e5e5;}
+::-webkit-scrollbar-track{background:#999;}
+::-webkit-scrollbar-track-piece{background:#ccc;}
+::-webkit-scrollbar-thumb{background:#666;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-resizer{background:#FF0BEE;}
+
+.mainMain .mainZZ,.mainMain .mainZC{
+    width: 200px;
+    height: 0;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+/*.mainMain .mainZC{*/
+    /*left: 0px;*/
+/*}*/
+.mainMain .mainZZ .mainZfont,.mainMain .mainZC .mainZfont{
+    height: 50px;
+    color: white;
+    line-height: 15px;
+    padding: 10px;
+    font-size: 13px;
+    margin-top: 1px;
+    background: rgba(0,0,0,0.6);
+}

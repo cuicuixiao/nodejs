@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: none;
+}
+#newclassm{
+    font-size: 13px;
+    color: white;
+    float: left;
+    margin-top: 40px;
+}
+#newclasss{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+span{
+    font-size: 14px;
+    color: white;
+}
+#newclassp{
+    width: 100px;
+    border: 0;
+    outline: none;
+    border-bottom: white 1px solid;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#newclassxz{
+    width: 120px;
+    height: 30px;
+    background-color: #F36c3A;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#newclassxz:hover{
+    box-shadow: 0 0 5px #fff;
+}
+#newclassss{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+#newclassk,#newclassk1{
+    width: 500px;
+    height: 210px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.71);
+}
+.planBm{
+    float: left;
+    width: 150px;
+    height: 30px;
+    position: relative;
+}
+.planf{
+    float: left;
+}
+.planBmN{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 0 10px;
+    margin-left: 10px;
+    color: white;
+    line-height: 30px;
+}
+.planBmNc{
+    margin-left: -20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.planC1{
+    width:100px;
+    border: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.9);
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    visibility:hidden;
+}
+@keyframes bs {
+    0%{transform: scale(1)}
+    25%{transform: scale(1.2)}
+    75%{transform: scale(0.8)}
+    100%{transform: scale(1)}
+}
+.planC1 div:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+#z,#z1,#z2,#z21,#z22,#z23{
+    float: left;
+    margin-top: 20px;
+    width: 500px;
+    height: 40px;
+}
+#newclassp1,#newclassp11{
+    width: 207px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.81);
+    margin-left: 20px;
+    font-size: 13px;
+    border: none;
+}
+
+input::-webkit-input-placeholder{
+    padding-left: 5px;
+}
+#newclasszi,#newclasszi21{
+    color: white;
+    font-size: 13px;
+    margin-left: 120px;
+}
+#newclasszi1,#newclasszi12{
+    font-size: 20px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+#newclasszi2,#newclasszi3,#newclasszi22,#newclasszi32{
+    float: left;
+    margin-top: 4px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#newclassp2,#newclassp4,#newclassp22,#newclassp42{
+    height: 30px;
+    margin-left: 2px;
+    background-color: rgba(255, 255, 255, 0.81);
+    font-size: 13px;
+    border: none;
+}
+#newclassp3,#newclassp5,#newclassp32,#newclassp52{
+    height: 30px;
+    margin-left: 50px;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.81);
+    font-size: 13px;
+    border: none;
+}
+#z2,#z22,#newclasssss{
+    display:none
+}
+#newclasssss{
+    margin-top: 20px;
+    margin-left: 20%;
+}
+#newclassssss{
+    margin-top: 30px;
+}
+#newclassbaocun{
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #F36c3A;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#newclassbaocun:hover{
+    box-shadow: 0 0 5px #fff;
+}
+::-webkit-scrollbar{width:5px;height:6px;background:#ccc;}
+::-webkit-scrollbar-button{background-color:#e5e5e5;}
+::-webkit-scrollbar-track{background:#999;}
+::-webkit-scrollbar-track-piece{background:#ccc;}
+::-webkit-scrollbar-thumb{background:#666;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-resizer{background:#FF0BEE;}

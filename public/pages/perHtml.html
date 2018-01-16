@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/per.css">
+    <title>Title</title>
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="perheaderPstyle">基础管理 > 人员管理</p>
+        </div>
+    </div>
+    <div class="row perInput">
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+            <label for="perName">员工姓名：</label>
+            <input type="text" id="perName" class="username" >
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+            <label for="perTel">联系电话：</label>
+            <input type="text" id="perTel" class="userphone">
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+            <label for="perQQ">QQ：</label>
+            <input type="text" id="perQQ" class="userqq">
+        </div>
+        <!--下拉框-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 perO">
+            <div class="per_btn">
+                <div>
+                    <div class="per_butText">员工姓名</div>
+                    <div class="perIco" onclick="xianshi()"><span class="caret"></span></div>
+                </div>
+                <ul class="perUl">
+                    <li onclick="nameFindObj(this)"><span class="per_li">全部</span></li>
+                    <li onclick="nameFindObj(this)"><span class="per_li">邹杰</span></li>
+                    <li onclick="nameFindObj(this)"><span class="per_li">林毅娜</span></li>
+                    <li onclick="nameFindObj(this)"><span class="per_li">王芳</span></li>
+                    <li onclick="nameFindObj(this)"><span class="per_li">陈涛</span></li>
+                </ul>
+            </div>
+        </div>
+        <!--查询、-->
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+            <button class="perCha" id="staffSearch">查询</button>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4 mp">
+            <div class="cou_app">
+                <div>
+                    <span class="glyphicon glyphicon-plus-sign cou_coi"></span>
+                </div>
+                <div><a href="newPer.html">新增人员</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="row per_Table">
+        <div class="col-lg-12">
+            <div class="table-responsive overflow" tabindex="5003" style="overflow: hidden; outline: none;">
+                <table class="table table-bordered " id="per_table">
+                    <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>员工姓名</th>
+                        <th>员工ID</th>
+                        <th>密码</th>
+                        <th>联系电话</th>
+                        <th>Q Q</th>
+                        <th>企业邮箱</th>
+                        <th>角色ID</th>
+                        <th>部门ID</th>
+                        <th>操 作</th>
+                    </tr>
+                    </thead>
+                    <tbody id="staffList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-4">
+        <div id="staffPrev">上一页</div>
+        <div id="numPage"></div>
+        <div id="staffNext">下一页</div>
+    </div>
+</div>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../js/data.js"></script>
+<script src="../js/per.js"></script>
+</body>
+</html>

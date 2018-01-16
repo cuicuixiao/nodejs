@@ -1,0 +1,61 @@
+
+
+#cadXxtz{
+    width: 323px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+#cadHead{
+    background-color: rgba(0,0,0,0.5);
+}
+#cadH4{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 5px 0 5px 10px;
+}
+.text-muted{
+    color: #C9C9C9;
+}
+.text-muted-syetem{
+    color: #C9C9C9;
+    padding: 0 0 0 15px;
+}
+.t-overflow{
+    color:white;
+    font-size: 13px;
+}
+.t-overflow-system{
+    color:white;
+    font-size: 13px;
+    padding: 0 0 0 15px;
+}
+.media{
+    background-color: rgba(0,0,0,0.3);
+    margin: 1px 0 1px 1px;
+}
+.media:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+.media-body{
+    padding: 10px 0 10px 0;
+}
+.pull-left{
+    padding: 13px 0 13px 5px;
+}
+.t-overflow{
+    padding: 5px 0 0 0;
+}
+#cadXnext{
+    float: right;
+    margin-right: 10px;
+
+}
+#cadXpre{
+    float: right;
+    margin-right: 10px;
+}
+body{
+    background: none;
+}

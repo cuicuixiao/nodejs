@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+}
+body>div{margin:0 auto}
+.kePublic{overflow:hidden; position:relative; height:638px;}
+.mKeBanner,.mKeBanner div{text-align:center;}
+#container canvas{
+	opacity:0.5;
+}
+/* .keBody .kePublic .zz{ */
+	/* background-image:url("../images/skin2.jpg"); */
+	/* background-size:100% 100%; */
+	/* position:absolute; */
+	/* top:0; */
+	/* left:0; */
+	/* width:100%; */
+	/* height:100%; */
+	/* z-index:-1; */
+/* } */
+.wron{
+	background-image:url("../images/404.png");
+	background-size:100% 100%;
+	position:absolute;
+	top:25%;
+	left:25%;
+	width:50%;
+	height:40%;
+	z-index:-1;
+}

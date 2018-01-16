@@ -1,0 +1,432 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: sandybrown;
+    /*background:none;*/
+}
+#staffPrev{
+    margin-top: 13%;
+    color: white;
+}
+#numPage{
+    margin-top:-20px;
+    margin-left: 30%;
+    color: white;
+}
+#staffNext{
+    margin-top:-20px;
+    margin-left: 65%;
+    color: white;
+}
+
+/*标题*/
+.perheaderPstyle{
+    font-size:14px;
+    color: white;
+    margin-top: 3%;
+}
+input{
+    outline: none;
+    color: white;
+}
+/*搜索栏*/
+.perInput{
+    margin-top: 5%;
+}
+.perInput input{
+    width:50%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.perInput label{
+    color: white;
+}
+/*下拉框*/
+.per_btn{
+    width: 80%;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    position: relative;
+}
+.per_butText{
+    float: left;
+    height:30px;
+    color: white;
+    font-weight:100;
+}
+.perIco{
+    width: 30%;
+    height:30px;
+    float: left;
+    color: #FFF;
+}
+.perUl{
+    list-style: none;
+    padding: 5px 0 5px 0;
+    width: 160px;
+    outline: 1px solid #e7e7e7;
+    background-color: rgba(255,255,255,0.9);
+    text-align: left;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scale(.5);
+}
+.perUl li{
+	text-align:center;
+	color:gray;
+}
+.perUl li:hover{
+	background-color:rgba(0,0,0,0.1);
+}
+.myTs{
+    position: fixed;
+    z-index: 10;
+    width: 50%;
+    height: 30%;
+    left: 300px;
+    top: 0;
+    /*visibility: hidden;*/
+    transition: all .2s ease-in-out;
+}
+.myWron{
+    width: 300px;
+    height: 210px;
+    margin: auto;
+    margin-top: -250px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+.myTishi{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+.myWhat{
+    height: 80px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 15px;
+    text-align: left;
+    line-height: 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 13px;
+}
+.myOk{
+    width: 55px;
+    float: left;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    background-color: rgba(255,255,255,0.3);
+    cursor: pointer;
+    margin-left: 70px;
+}
+.myNo{
+    width: 55px;
+    float: left;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px;
+    border: 1px solid rgba(255,255,255,0.5);
+    cursor: pointer;
+    margin-left: 50px;
+}
+/*查询*/
+.perCha{
+    width: 120px;
+    height: 30px;
+    border:rgba(255, 255, 255, 0.5);
+    background:rgb(243,108,58);
+    text-align: center;
+    line-height: 30px;
+    border-radius: 3px;
+    color:#fff;
+	cursor:pointer;
+}
+.perCha:hover{
+    box-shadow: 0 0 5px #fff;
+}
+/*添加人员*/
+.per_app>div{
+    float: left;
+    margin-left: 1%;
+    height: 30px;
+    background:rgb(243,108,58);
+}
+.per_app>div:nth-of-type(1){
+    width:20%;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.per_app>div:nth-of-type(2){
+    width:50%;
+    text-align: center;
+    line-height: 30px;
+    color:white;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+	cursor:pointer;
+}
+.per_span{
+    margin-left: 20%;
+}
+.per_Table{
+    margin-top:3%;
+}
+/*表格*/
+#per_table th{
+    text-align: center;
+    height: 28px;
+	line-height:28px;
+    background-color:rgba(0,0,0,0.7);
+}
+#per_table td{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+#per_table tr:hover td{
+	box-shadow: 0 0 5px #ffffff ;
+}
+#per_table th{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.per_maxBox{
+    width:35%;
+    height: 205px;
+    visibility: hidden;
+    background-color:rgba(0,0,0,0.9);
+    position: absolute;
+    top: -250px;
+    left:30%;
+    transition: all .2s ease-in-out;
+}
+.per_boxP{
+    color:white;
+    font-size:18px;
+    text-align: center;
+	margin-top:20px;
+}
+.per_minBox{
+    margin: 0 auto;
+    width:80%;
+    height:80px;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.7);
+    border-top:1px solid rgba(228, 228, 228, 0.7);
+    color:white;
+    line-height: 80px;
+    font-weight:100;
+}
+.per_sure{
+    width:15%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    /* border: 1px solid rgba(255,255,255,0.5); */
+	background-color:rgba(255,255,255,0.3);
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-left:25%;
+    margin-top:7%;
+}
+.per_close{
+    width: 15%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    margin-left:20%;
+    margin-top:7%;
+}
+table{
+    color:white;
+    text-align: center;
+}
+tbody tr{
+    height: 40px;
+    background-color:rgba(255,255,255,0.2);
+}
+tbody tr:nth-of-type(2){
+    background-color:rgba(0,0,0,0.2);
+}
+tbody tr:nth-of-type(4){
+    background-color:rgba(0,0,0,0.2);
+}
+tbody th:hover{
+    /*box-shadow: 0 0 0 #fff;*/
+}
+
+
+
+#cou_table th{
+    text-align: center;
+    height: 45px;
+    background-color:rgba(0,0,0,0.7);
+}
+#cou_table td{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+#cou_table tr:hover td{
+	/*box-shadow: 0 0 5px #ffffff ;*/
+}
+#cou_table th{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+tbody tr{
+    height: 40px;
+    background-color:rgba(255,255,255,0.2);
+}
+tbody tr:nth-of-type(2){
+    background-color:rgba(0,0,0,0.2);
+}
+tbody tr:nth-of-type(4){
+    background-color:rgba(0,0,0,0.2);
+}
+tbody tr:hover{
+    box-shadow: 0 0 5px #fff;
+}
+tbody tr td span{
+    padding: 0 10px;
+}
+/*课程管理*/
+.cou_Pstyle{
+    font-size: 18px;
+    color: white;
+    margin-top: 3%;
+}
+
+.cou_Box{
+    overflow: hidden;
+    margin-top:3%;
+}
+.cou_app>div>span{
+    line-height: 30px;
+    text-align: center;
+}
+.cou_app>div{
+    float: left;
+    margin-left: 1px;
+    height: 30px;
+    background:rgb(243,108,58);
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+}
+.cou_app>div:nth-of-type(1){
+    width:30px;
+    border-radius:3px;
+}
+.cou_app>div:nth-of-type(2){
+    width:120px;
+    border-radius:3px;
+	cursor:pointer;
+}
+.cou_Table{
+    margin-top: 3%;
+    color: white;
+    text-align: center;
+}
+.cou_maxBox{
+    width:35%;
+    height: 205px;
+    visibility:hidden;
+    background-color:rgba(0,0,0,0.9);
+    position: absolute;
+    top: -250px;
+    left:40%;
+    transition: all .2s ease-in-out;
+}
+.cou_boxP{
+    color:white;
+    font-size:18px;
+    text-align: center;
+    font-weight:100;
+	margin-top:20px;
+}
+.cou_minBox{
+    margin: 0 auto;
+    width:80%;
+    height:80px;
+    border-bottom: 1px solid rgba(228, 228, 228, 0.7);
+    border-top:1px solid rgba(228, 228, 228, 0.7);
+    color:white;
+    line-height: 80px;
+}
+.cou_sure{
+    width:15%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+   /*  border: 1px solid white; */
+   background-color:rgba(255,255,255,0.3);
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-left:25%;
+    margin-top:7%;
+}
+.cou_close{
+    width: 15%;
+    height: 30px;
+    float: left;
+    line-height: 30px;
+    border: 1px solid rgba(255,255,255,0.5);
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    margin-left:20%;
+    margin-top:7%;
+}
+.perO{
+	position:relative;
+	z-index:10;
+}
+.cou_coi:before {
+	 opacity:0.5;
+}
+.perO,.perCha,.mp{
+    margin-top: 20px;
+}
+thead tr{
+    height: 40px;
+}
+.cou_app>div a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.cou_app div:nth-child(2):hover{
+    box-shadow: 0 0 5px #fff;
+}
+.cou_app{
+    height: 40px;
+}
+.cou_app a{
+    color: white;
+    text-decoration: none;
+}
+::-webkit-scrollbar{width:5px;height:6px;background:#ccc;}
+::-webkit-scrollbar-button{background-color:#e5e5e5;}
+::-webkit-scrollbar-track{background:#999;}
+::-webkit-scrollbar-track-piece{background:#ccc;}
+::-webkit-scrollbar-thumb{background:#666;}
+::-webkit-scrollbar-corner{background:#82AFFF;}
+::-webkit-resizer{background:#FF0BEE;}
